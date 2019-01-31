@@ -1,0 +1,61 @@
+/****************** Import Files*******************/
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_mixin.scss';
+/****************** Import Files*******************/
+.opa1{opacity: 1;transition: all 3s ease;}
+.opa0{opacity: 0;}
+.st0{fill:#E0E0E0;}
+.head_section{
+    background:#00AEEF;
+    .logo{
+        position: absolute;
+        top:0;
+    }
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 42%;   
+    }
+    #head_content{
+        position: absolute;top:40%;left:5%;
+        #cta{
+           @include callbutton;
+        }
+        h2{
+            @include heading;
+            span{
+                font-weight: bold; 
+                font-size: 42px;
+            }
+        }
+        p{
+            @include para;
+        }
+    }
+}
+.polymorph{fill:#e0e0e0;}
+ #cta2{
+    @include callbutton;
+    background:#fff;
+}
+p{
+    font-size: 1.2em;
+}
+
+#blip{
+    position: absolute;
+    color:#29ABE2;
+    right:40%;
+    top:20px;
+    opacity:0;
+    width:33%;
+    transform:translateY(-800px);
+    h1{
+        @include heading;  
+    }
+    p{
+        @include para;
+    }
+}
