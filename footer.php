@@ -1,8 +1,9 @@
 
 
 
-
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="js/smoothscroll.js"></script> -->
 <script src="js/typed.min.js"></script>
 <script src="js/anime.min.js"></script>
 <script>
@@ -17,6 +18,26 @@
             backSpeed:80,
             loop:true
             });
+
+            var $window = $(window),
+        $mainMenuBar = $('header'),
+        $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+
+    // Run this on scroll events.
+    $window.scroll(function() {
+        var window_top = $window.scrollTop();
+        var div_top = $mainMenuBarAnchor.offset().top;
+        if (window_top > div_top) {
+            // Make the div sticky.
+            $mainMenuBar.addClass('stick');
+            $mainMenuBarAnchor.height($mainMenuBar.height());
+        }
+        else {
+            // Unstick the div.
+            $mainMenuBar.removeClass('stick');
+            $mainMenuBarAnchor.height(0);
+        }
+    });
         });
         var btn = document.getElementById('cta');
         var btn2 = document.getElementById('cta2');

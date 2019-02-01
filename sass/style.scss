@@ -3,14 +3,23 @@
 @import '_variables.scss';
 @import '_mixin.scss';
 /****************** Import Files*******************/
+.custom_container{
+    width: 90%;
+    margin:0 auto;
+}
 .opa1{opacity: 1;transition: all 3s ease;}
 .opa0{opacity: 0;}
 .st0{fill:#E0E0E0;}
 .head_section{
     background:#00AEEF;
     .logo{
-        position: absolute;
-        top:0;
+        position: relative;
+        width:65%;
+        left:-235px;
+        cursor:pointer;
+        img{
+            width:30%;
+        }
     }
     img{
         position: absolute;
@@ -19,12 +28,13 @@
         width: 42%;   
     }
     #head_content{
-        position: absolute;top:40%;left:5%;
+        position: absolute;top:30%;left:5%;
         #cta{
            @include callbutton;
         }
         h2{
             @include heading;
+            margin-top:130px;
             span{
                 font-weight: bold; 
                 font-size: 42px;
@@ -38,7 +48,7 @@
 .polymorph{fill:#e0e0e0;}
  #cta2{
     @include callbutton;
-    background:#fff;
+    background:$white;
 }
 p{
     font-size: 1.2em;
@@ -57,5 +67,144 @@ p{
     }
     p{
         @include para;
+    }
+}
+header{
+    background:$black;
+    width:100%;
+    float: left;
+    .nav_logo{
+      float:left;
+      img{
+          width: 28%;
+          margin-top:12px;
+      }  
+    }
+nav{
+    float:right;
+}
+li{
+   font-size: 16px;
+   color:$white;
+   font-family: 'Montserrat', sans-serif;
+   display:inline-block;
+   padding: 25px;
+   cursor:pointer;
+   &:hover {
+    background:$white;
+}
+&:hover a{
+    color:$primary_color;
+}
+   a{
+       color:$white;
+   }
+}
+}
+.about_me{
+    width:100%;
+    float:left;
+    .about_me_img {
+        float: left;
+        padding: 0;
+        background: url(../img/about-pic.jpg) no-repeat 0px 0px;
+        min-height: 580px;
+        background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        width:50%;
+    }
+    .about_me_content{
+        width:50%;
+        float: left;
+        padding: 100px 90px 0 90px;
+        box-sizing: border-box;
+        h2{
+            color:$black;font-size: 35px;font-family: 'Montserrat', sans-serif;line-height: 55px;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            @include para;
+            line-height:35px; 
+        }
+        .resume_download{
+            padding: 15px 30px;
+            background: none;
+            border: 1px solid $primary_color;
+            font-size: 16px;
+            margin-top: 40px;
+            transition:all 0.7s ease;
+            cursor:pointer;
+            font-family: 'Montserrat', sans-serif;
+            &:hover{
+                background:$primary_color;
+                transition:all 0.7s ease;
+            }
+            &:hover a{
+                color:$white;
+                transition:all 0.7s ease;
+            }
+            a{
+                color:$black;
+                transition:all 0.7s ease;
+            }
+        }
+    }
+}
+.stick {
+    position: fixed;
+    top: 0;
+}
+.servies{
+  width:100%;
+  float: left;
+  padding: 5% 0;
+  background:#e0e0e0;
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center; 
+        text-transform: capitalize;
+        color:$black;
+    }
+    .service_list{
+        width:80%;
+        margin:0 auto;
+        
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .list-item {
+          display: flex; 
+        padding: 2.5em;
+          width: 100%;
+      }
+      @media all and (min-width: 40em) {
+        .list-item {
+          width: 50%;
+        }
+      }
+      @media all and (min-width: 60em) {
+        .list-item {
+          width: 27%;
+        }
+      }
+      .list-content {
+        background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+        width: 100%;
+    }
+    .list-content p {
+        flex: 1 0 auto;
     }
 }
