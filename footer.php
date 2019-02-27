@@ -3,7 +3,8 @@
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="js/smoothscroll.js"></script> -->
+<script src="js/bootstrap.js"></script>
+<script src="js/smoothscroll.js"></script>
 <script src="js/typed.min.js"></script>
 <script src="js/anime.min.js"></script>
 <script>
@@ -19,7 +20,42 @@
             loop:true
             });
 
-            var $window = $(window),
+            $(".skills").addClass("active")
+            $(".skills .skill .skill-bar span").each(function() {
+               $(this).animate({
+                  "width": $(this).parent().attr("data-bar") + "%"
+               }, 1000);
+               $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+            });
+            setTimeout(function() {
+               $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+            }, 2000);
+
+            $("nav li a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+            }
+            });
+
+            $("#cta a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+            }
+            });
+
+        var $window = $(window),
         $mainMenuBar = $('header'),
         $mainMenuBarAnchor = $('#mainMenuBarAnchor');
 
@@ -59,12 +95,12 @@
                 targets:'#blip',
                 opacity:1,
                 duration:500,
-                translateY:150, 
-            }); 
-            
-            var promise = morphing.finished.then(() =>{ 
+                translateY:150,
+            });
+
+            var promise = morphing.finished.then(() =>{
                 btn2.onclick = function(){
-                    
+
                 $('#head_content').removeClass('opa0');
                 $('#head_content').addClass('opa1');
                 var morphing = anime({
@@ -86,7 +122,7 @@
                 }
             });
         }
-       
+
     </script>
 </body>
 </html>
