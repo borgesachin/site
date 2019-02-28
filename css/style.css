@@ -174,19 +174,21 @@ input[type='text'], input[type='password'], textarea, input[type='email'], input
       cursor: pointer;
       outline: 0; }
     .head_section #head_content h2 {
-      color: #000;
+      color: #fff;
       font-size: 40px;
       font-family: 'Montserrat', sans-serif;
       line-height: 55px;
-      margin-top: 130px; }
+      margin-top: 130px;
+      color: #000; }
       .head_section #head_content h2 span {
         font-weight: bold;
         font-size: 42px; }
     .head_section #head_content p {
-      color: #000;
+      color: #fff;
       font-size: 16px;
       font-family: 'Montserrat', sans-serif;
-      line-height: 25px; }
+      line-height: 25px;
+      color: #000; }
 
 .polymorph {
   fill: #e0e0e0; }
@@ -214,12 +216,12 @@ p {
   width: 33%;
   transform: translateY(-800px); }
   #blip h1 {
-    color: #000;
+    color: #fff;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     line-height: 55px; }
   #blip p {
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     line-height: 25px; }
@@ -277,7 +279,7 @@ header {
       .about_me .about_me_content h2 span {
         font-weight: bold; }
     .about_me .about_me_content p {
-      color: #000;
+      color: #fff;
       font-size: 16px;
       font-family: 'Montserrat', sans-serif;
       line-height: 25px;

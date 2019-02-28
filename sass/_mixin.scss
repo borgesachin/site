@@ -1,8 +1,8 @@
 @mixin heading{
-    color:$black;font-size: 40px;font-family: 'Montserrat', sans-serif;line-height: 55px;
+    color:$white;font-size: 40px;font-family: 'Montserrat', sans-serif;line-height: 55px;
 }
 @mixin para{
-    color:$black;font-size: 16px;font-family: 'Montserrat', sans-serif;line-height: 25px;
+    color:$white;font-size: 16px;font-family: 'Montserrat', sans-serif;line-height: 25px;
 }
 @mixin callbutton{
     margin-top:80px;

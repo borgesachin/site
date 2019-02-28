@@ -16,13 +16,13 @@
         <img src="img/home_top1.png">
         </svg>
         <div id="blip">
-            <h1>well..That was revealing....</h1>
+            <h1>Hi! I'm <strong>John Doe</strong></h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I'm a Mumbai based front-end and UI designer brings hand-on experience in the areas of: UX/UI,
+              Web design & development, Emailer designing, E-commerce platforms, Online Community and Interactive HTML5 Banners.
+              Apart, I'm well versed in numerous computer languages i.e. HTML 5, JavaScript etc. Also, framework i.e. Bootstraps
+              to create the responsive web.Exploring the new technologies have always been my hobbies and I feel the digital world
+              is full with new surprises. Therefore I'm always open to explore and learn the new and updated technologies.
             </p>
             <button id="cta2">Go Back</button>
         </div>
