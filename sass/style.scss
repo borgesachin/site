@@ -134,6 +134,7 @@ li{
         p{
             @include para;
             line-height:35px;
+            color:$black;
         }
         .resume_download{
             padding: 15px 30px;
@@ -190,10 +191,21 @@ li{
             text-align: center;
             background:$white;
             transition:all 0.5s ease;
+            .wht{
+              fill:$black;
+              stroke:$black;
+            }
             &:hover{
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 transition:all 0.5s ease;
             }
+              &:hover .wht{
+                fill:$white;
+                stroke:$white;
+              }
+              &:hover .service_icon{
+                background: #00AEEF;
+              }
             .service_icon{
                 display: inline-block;
                 vertical-align: middle;
@@ -214,7 +226,7 @@ li{
                 border-radius: 50%;
                 border:1px solid #00AEEF;
             }
-            img{
+            svg{
                 width: 50%;
                 position: absolute;
                 top: 50%;

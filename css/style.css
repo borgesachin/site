@@ -283,7 +283,8 @@ header {
       font-size: 16px;
       font-family: 'Montserrat', sans-serif;
       line-height: 25px;
-      line-height: 35px; }
+      line-height: 35px;
+      color: #000; }
     .about_me .about_me_content .resume_download {
       padding: 15px 30px;
       background: none;
@@ -333,9 +334,17 @@ header {
       text-align: center;
       background: #fff;
       transition: all 0.5s ease; }
+      .servies .service_list .service_list_content .wht {
+        fill: #000;
+        stroke: #000; }
       .servies .service_list .service_list_content:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: all 0.5s ease; }
+      .servies .service_list .service_list_content:hover .wht {
+        fill: #fff;
+        stroke: #fff; }
+      .servies .service_list .service_list_content:hover .service_icon {
+        background: #00AEEF; }
       .servies .service_list .service_list_content .service_icon {
         display: inline-block;
         vertical-align: middle;
@@ -355,7 +364,7 @@ header {
         text-align: center;
         border-radius: 50%;
         border: 1px solid #00AEEF; }
-      .servies .service_list .service_list_content img {
+      .servies .service_list .service_list_content svg {
         width: 50%;
         position: absolute;
         top: 50%;
